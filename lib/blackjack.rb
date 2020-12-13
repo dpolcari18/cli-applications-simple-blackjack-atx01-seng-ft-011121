@@ -74,10 +74,10 @@ end
 def runner
   # code runner here
   welcome
-  current_total=initial_round
-  until current_total>21 do
+  card_total=initial_round
+  until card_total>21 do
     prompt_user
-    current_total+=hit?(current_total)
+    card_total+=hit?(card_total)
   end
 end_game
 end
