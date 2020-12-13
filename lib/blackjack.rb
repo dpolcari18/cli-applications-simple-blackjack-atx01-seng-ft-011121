@@ -76,6 +76,7 @@ def runner
   welcome
   card_total=initial_round
   until card_total>21 do
+    binding.pry
     prompt_user
     card_total+=hit?(card_total)
     display_card_total(card_total)
