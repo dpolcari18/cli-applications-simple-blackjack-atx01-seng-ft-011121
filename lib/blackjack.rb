@@ -75,7 +75,10 @@ def runner
   # code runner here
   welcome
   initial_round
-  
+  until final_total>21 do
+    prompt_user
+    hit?(current_card_total)
+  end
 end_game
 end
     
